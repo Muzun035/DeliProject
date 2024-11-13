@@ -36,4 +36,17 @@ class Sandwich implements IPriceable {
         }
         return price;
     }
+
+    public String getDescription() {
+        StringBuilder description = new StringBuilder();
+        description.append(size).append(" sandwich on ").append(breadType).append(" bread");
+        if (isToasted) {
+            description.append(" (toasted)");
+        }
+        description.append(" with:");
+        for (Topping topping : toppings) {
+            description.append("\n  - ").append(topping.getName());
+        }
+        return description.toString();
+    }
 }
