@@ -15,17 +15,17 @@ public class OrderFileManager {
 
             writer.write("Sandwiches:\n");
             for (Sandwich sandwich : order.getSandwiches()) {
-                writer.write("- " + sandwich.calculatePrice() + "\n");
+                writer.write("- " + sandwich.getDescription() + " ($" + String.format("%.2f", sandwich.calculatePrice()) + ")\n");
             }
 
             writer.write("\nDrinks:\n");
             for (Drink drink : order.getDrinks()) {
-                writer.write("- " + drink.calculatePrice() + "\n");
+                writer.write("- " + drink.getDescription() + " ($" + String.format("%.2f", drink.calculatePrice()) + ")\n");
             }
 
             writer.write("\nChips:\n");
             for (Chips chips : order.getChipsList()) {
-                writer.write("- " + chips.calculatePrice() + "\n");
+                writer.write("- " + chips.getDescription() + " ($" + String.format("%.2f", chips.calculatePrice()) + ")\n");
             }
 
             writer.write("\nTotal Price: $" + String.format("%.2f", order.calculateTotalPrice()) + "\n");
