@@ -25,12 +25,20 @@ class Sandwich implements IPriceable {
 
     @Override
     public double calculatePrice() {
-        double price = switch (size) {
-            case "4\"" -> 5.50;
-            case "8\"" -> 7.00;
-            case "12\"" -> 8.50;
-            default -> 0.0;
-        };
+        double price;
+        switch (size) {
+            case "4\"":
+                price = 5.50;
+                break;
+            case "8\"":
+                price = 7.00;
+                break;
+            case "12\"":
+                price = 8.50;
+                break;
+            default:
+                price = 0.0;
+        }
         for (Topping topping : toppings) {
             price += topping.calculateTotalPrice(size);
         }

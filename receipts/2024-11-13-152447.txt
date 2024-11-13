@@ -1,0 +1,17 @@
+Receipt for customer: John
+Order time: Wed Nov 13 15:24:47 EST 2024
+
+Sandwiches:
+- 12 sandwich on wheat bread (toasted) with:
+  - Bacon
+  - American
+  - Lettuce
+  - Mayo ($0.00)
+
+Drinks:
+- large drink (coke) ($0.00)
+
+Chips:
+- potato chips ($1.50)
+
+Total Price: $1.50

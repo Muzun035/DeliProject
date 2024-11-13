@@ -11,12 +11,16 @@ public class Drink implements IPriceable {
 
     @Override
     public double calculatePrice() {
-        return switch (size) {
-            case "Small" -> 2.00;
-            case "Medium" -> 2.50;
-            case "Large" -> 3.00;
-            default -> 0.0;
-        };
+        switch (size.toLowerCase()) {
+            case "small":
+                return 2.00;
+            case "medium":
+                return 2.50;
+            case "large":
+                return 3.00;
+            default:
+                return 0.0;
+        }
     }
 
     public String getDescription() {
