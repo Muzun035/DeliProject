@@ -5,7 +5,11 @@ public class UserInterface {
     private Scanner scanner = new Scanner(System.in);
     private Order currentOrder;
 
-    
+    private static final String[] MEAT_OPTIONS = {"Bacon", "Ham", "Salami", "Roast Beef", "Chicken", "Steak"};
+    private static final String[] CHEESE_OPTIONS = {"American", "Provolone", "Cheddar", "Swiss"};
+    private static final String[] REGULAR_TOPPING_OPTIONS = {"Lettuce", "Peppers", "Onions", "Tomatoes", "Jalapenos", "Cucumbers", "Pickles", "Guacamole", "Mushrooms"};
+    private static final String[] SAUCE_OPTIONS = {"Mayo", "Mustard", "Ketchup", "Ranch", "Thousand Island", "Vinaigrette"};
+
     public void displayMainMenu() {
         boolean running = true;
         while (running) {
@@ -91,45 +95,56 @@ public class UserInterface {
 
             switch (toppingSelection) {
                 case 1 -> {
-                    System.out.println("Enter meat type: -steak\n" +
-                            "- ham\n" +
-                            "- salami\n" +
-                            "- roast beef\n" +
-                            "- chicken\n" +
-                            "- bacon");
-                    String meatType = scanner.nextLine();
-                    sandwich.addTopping(new Meat(meatType));
+                    System.out.println("Select meat type:");
+                    for (int i = 0; i < MEAT_OPTIONS.length; i++) {
+                        System.out.println((i + 1) + ") " + MEAT_OPTIONS[i]);
+                    }
+                    int meatChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if (meatChoice > 0 && meatChoice <= MEAT_OPTIONS.length) {
+                        sandwich.addTopping(new Meat(MEAT_OPTIONS[meatChoice - 1]));
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
                 }
                 case 2 -> {
-                    System.out.println("Enter cheese type: - american\n" +
-                            "- provolone\n" +
-                            "- cheddar\n" +
-                            "- swiss");
-                    String cheeseType = scanner.nextLine();
-                    sandwich.addTopping(new Cheese(cheeseType));
+                    System.out.println("Select cheese type:");
+                    for (int i = 0; i < CHEESE_OPTIONS.length; i++) {
+                        System.out.println((i + 1) + ") " + CHEESE_OPTIONS[i]);
+                    }
+                    int cheeseChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if (cheeseChoice > 0 && cheeseChoice <= CHEESE_OPTIONS.length) {
+                        sandwich.addTopping(new Cheese(CHEESE_OPTIONS[cheeseChoice - 1]));
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
                 }
                 case 3 -> {
-                    System.out.println("Enter regular topping type: - lettuce\n" +
-                            "- peppers\n" +
-                            "- onions\n" +
-                            "- tomatoes\n" +
-                            "- jalapenos\n" +
-                            "- cucumbers\n" +
-                            "- pickles\n" +
-                            "- guacamole\n" +
-                            "- mushrooms");
-                    String regularTopping = scanner.nextLine();
-                    sandwich.addTopping(new RegularTopping(regularTopping));
+                    System.out.println("Select regular topping type:");
+                    for (int i = 0; i < REGULAR_TOPPING_OPTIONS.length; i++) {
+                        System.out.println((i + 1) + ") " + REGULAR_TOPPING_OPTIONS[i]);
+                    }
+                    int toppingChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if (toppingChoice > 0 && toppingChoice <= REGULAR_TOPPING_OPTIONS.length) {
+                        sandwich.addTopping(new RegularTopping(REGULAR_TOPPING_OPTIONS[toppingChoice - 1]));
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
                 }
                 case 4 -> {
-                    System.out.println("Enter sauce type: - mayo\n" +
-                            "- mustard\n" +
-                            "- ketchup\n" +
-                            "- ranch\n" +
-                            "- thousand islands\n" +
-                            "- vinaigrette");
-                    String sauceType = scanner.nextLine();
-                    sandwich.addTopping(new Sauce(sauceType));
+                    System.out.println("Select sauce type:");
+                    for (int i = 0; i < SAUCE_OPTIONS.length; i++) {
+                        System.out.println((i + 1) + ") " + SAUCE_OPTIONS[i]);
+                    }
+                    int sauceChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if (sauceChoice > 0 && sauceChoice <= SAUCE_OPTIONS.length) {
+                        sandwich.addTopping(new Sauce(SAUCE_OPTIONS[sauceChoice - 1]));
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
                 }
                 case 0 -> addingToppings = false;
                 default -> System.out.println("Invalid selection. Please try again.");
