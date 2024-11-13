@@ -90,22 +90,43 @@ public class UserInterface {
 
             switch (toppingSelection) {
                 case 1 -> {
-                    System.out.println("Enter meat type:");
+                    System.out.println("Enter meat type: -steak\n" +
+                            "- ham\n" +
+                            "- salami\n" +
+                            "- roast beef\n" +
+                            "- chicken\n" +
+                            "- bacon");
                     String meatType = scanner.nextLine();
                     sandwich.addTopping(new Meat(meatType));
                 }
                 case 2 -> {
-                    System.out.println("Enter cheese type:");
+                    System.out.println("Enter cheese type: - american\n" +
+                            "- provolone\n" +
+                            "- cheddar\n" +
+                            "- swiss");
                     String cheeseType = scanner.nextLine();
                     sandwich.addTopping(new Cheese(cheeseType));
                 }
                 case 3 -> {
-                    System.out.println("Enter regular topping type:");
+                    System.out.println("Enter regular topping type: - lettuce\n" +
+                            "- peppers\n" +
+                            "- onions\n" +
+                            "- tomatoes\n" +
+                            "- jalapenos\n" +
+                            "- cucumbers\n" +
+                            "- pickles\n" +
+                            "- guacamole\n" +
+                            "- mushrooms");
                     String regularTopping = scanner.nextLine();
                     sandwich.addTopping(new RegularTopping(regularTopping));
                 }
                 case 4 -> {
-                    System.out.println("Enter sauce type:");
+                    System.out.println("Enter sauce type: - mayo\n" +
+                            "- mustard\n" +
+                            "- ketchup\n" +
+                            "- ranch\n" +
+                            "- thousand islands\n" +
+                            "- vinaigrette");
                     String sauceType = scanner.nextLine();
                     sandwich.addTopping(new Sauce(sauceType));
                 }
