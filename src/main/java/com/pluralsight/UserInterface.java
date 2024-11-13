@@ -5,6 +5,7 @@ public class UserInterface {
     private Scanner scanner = new Scanner(System.in);
     private Order currentOrder;
 
+    
     public void displayMainMenu() {
         boolean running = true;
         while (running) {

@@ -1,0 +1,13 @@
+Receipt for customer: Mehmet
+Order time: Wed Nov 13 14:00:31 EST 2024
+
+Sandwiches:
+- 7.25
+
+Drinks:
+- 0.0
+
+Chips:
+- 1.5
+
+Total Price: $8.75
