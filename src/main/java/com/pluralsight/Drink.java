@@ -18,4 +18,8 @@ public class Drink implements IPriceable {
             default -> 0.0;
         };
     }
+
+    public String getDescription() {
+        return size + " drink (" + flavor + ")";
+    }
 }
