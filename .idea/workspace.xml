@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e3f1794-bdf7-41bd-b2dd-1d4ec60746de" name="Changes" comment="" />
+    <list default="true" id="5e3f1794-bdf7-41bd-b2dd-1d4ec60746de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Chips.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

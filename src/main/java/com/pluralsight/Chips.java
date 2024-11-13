@@ -11,4 +11,8 @@ public class Chips implements IPriceable {
     public double calculatePrice() {
         return 1.50;
     }
+
+    public String getDescription() {
+        return type + " chips";
+    }
 }
