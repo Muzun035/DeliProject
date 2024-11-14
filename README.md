@@ -7,7 +7,7 @@ This project is a Java console application that serves as a point of sales syste
 
 The intended users are the shop staff and customers who want to streamline the ordering process. The main functionality includes customizing sandwiches, adding drinks and chips, calculating the total price, and generating receipts for the orders. The application aims to solve the problem of managing orders efficiently, reducing human error, and speeding up the order process.
 
-![Class Diagram](path/to/your/class_diagram.png)
+![class.diagram.png](class.diagram.png)
 
 ## User Stories
 
