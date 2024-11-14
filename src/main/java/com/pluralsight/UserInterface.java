@@ -17,7 +17,7 @@ public class UserInterface {
             System.out.println("1) New Order");
             System.out.println("0) Exit");
             int selection = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
             running = processUserSelection(selection);
         }
     }

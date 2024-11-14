@@ -1,0 +1,21 @@
+Receipt for customer: James
+Order time: Wed Nov 13 19:39:38 EST 2024
+
+Sandwiches:
+- 12" sandwich on wrap bread (toasted) with:
+  - Bacon
+  - American
+  - Peppers
+  - Onions
+  - Mushrooms
+  - Mayo
+  - Ketchup
+  - Ranch ($13.75)
+
+Drinks:
+- large drink (coke) ($3.00)
+
+Chips:
+- potato chips ($1.50)
+
+Total Price: $18.25
