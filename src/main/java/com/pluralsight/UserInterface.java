@@ -17,7 +17,7 @@ public class UserInterface {
             System.out.println("1) New Order");
             System.out.println("0) Exit");
             int selection = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
             running = processUserSelection(selection);
         }
     }
@@ -52,7 +52,7 @@ public class UserInterface {
             System.out.println("4) Checkout");
             System.out.println("0) Cancel Order");
             int selection = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
             ordering = processOrderSelection(selection);
         }
     }
@@ -91,7 +91,7 @@ public class UserInterface {
             System.out.println("4) Sauce");
             System.out.println("0) Done adding toppings");
             int toppingSelection = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (toppingSelection) {
                 case 1 -> {
@@ -142,16 +142,24 @@ public class UserInterface {
                     }
                 }
                 case 4 -> {
-                    System.out.println("Select sauce type:");
-                    for (int i = 0; i < SAUCE_OPTIONS.length; i++) {
-                        System.out.println((i + 1) + ") " + SAUCE_OPTIONS[i]);
-                    }
-                    int sauceChoice = scanner.nextInt();
-                    scanner.nextLine();
-                    if (sauceChoice > 0 && sauceChoice <= SAUCE_OPTIONS.length) {
-                        sandwich.addTopping(new Sauce(SAUCE_OPTIONS[sauceChoice - 1]));
-                    } else {
-                        System.out.println("Invalid selection.");
+                    boolean addingSauces = true;
+                    while (addingSauces) {
+                        System.out.println("Select sauce type:");
+                        for (int i = 0; i < SAUCE_OPTIONS.length; i++) {
+                            System.out.println((i + 1) + ") " + SAUCE_OPTIONS[i]);
+                        }
+                        int sauceChoice = scanner.nextInt();
+                        scanner.nextLine();
+                        if (sauceChoice > 0 && sauceChoice <= SAUCE_OPTIONS.length) {
+                            sandwich.addTopping(new Sauce(SAUCE_OPTIONS[sauceChoice - 1]));
+                        } else {
+                            System.out.println("Invalid selection.");
+                        }
+                        System.out.println("Would you like to add another sauce? (yes/no):");
+                        String addMore = scanner.nextLine();
+                        if (!addMore.equalsIgnoreCase("yes")) {
+                            addingSauces = false;
+                        }
                     }
                 }
                 case 0 -> addingToppings = false;
