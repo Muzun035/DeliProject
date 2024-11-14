@@ -100,7 +100,7 @@ public class UserInterface {
                 System.out.println("4) Sauce");
                 System.out.println("0) Done adding toppings");
                 int toppingSelection = scanner.nextInt();
-                scanner.nextLine(); 
+                scanner.nextLine();
 
                 switch (toppingSelection) {
                     case 1 -> {
