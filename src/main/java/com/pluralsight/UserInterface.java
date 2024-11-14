@@ -121,16 +121,24 @@ public class UserInterface {
                     }
                 }
                 case 3 -> {
-                    System.out.println("Select regular topping type:");
-                    for (int i = 0; i < REGULAR_TOPPING_OPTIONS.length; i++) {
-                        System.out.println((i + 1) + ") " + REGULAR_TOPPING_OPTIONS[i]);
-                    }
-                    int toppingChoice = scanner.nextInt();
-                    scanner.nextLine();
-                    if (toppingChoice > 0 && toppingChoice <= REGULAR_TOPPING_OPTIONS.length) {
-                        sandwich.addTopping(new RegularTopping(REGULAR_TOPPING_OPTIONS[toppingChoice - 1]));
-                    } else {
-                        System.out.println("Invalid selection.");
+                    boolean addingRegularToppings = true;
+                    while (addingRegularToppings) {
+                        System.out.println("Select regular topping type:");
+                        for (int i = 0; i < REGULAR_TOPPING_OPTIONS.length; i++) {
+                            System.out.println((i + 1) + ") " + REGULAR_TOPPING_OPTIONS[i]);
+                        }
+                        int toppingChoice = scanner.nextInt();
+                        scanner.nextLine();
+                        if (toppingChoice > 0 && toppingChoice <= REGULAR_TOPPING_OPTIONS.length) {
+                            sandwich.addTopping(new RegularTopping(REGULAR_TOPPING_OPTIONS[toppingChoice - 1]));
+                        } else {
+                            System.out.println("Invalid selection.");
+                        }
+                        System.out.println("Would you like to add another regular topping? (yes/no):");
+                        String addMore = scanner.nextLine();
+                        if (!addMore.equalsIgnoreCase("yes")) {
+                            addingRegularToppings = false;
+                        }
                     }
                 }
                 case 4 -> {
