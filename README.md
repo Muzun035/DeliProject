@@ -11,6 +11,18 @@ The intended users are the shop staff and customers who want to streamline the o
 
 ## User Stories
 
+
+- As a customer, I want to quickly select from a list of signature sandwiches so that I can save time while ordering.
+- As a customer, I want to have the option to toast my sandwich so that I can enjoy a warm and crispy meal.
+- As a staff member, I want the system to generate a receipt automatically so that I can keep records of all transactions.
+- As a customer, I want to be able to order a customized sandwich so that I can enjoy a meal according to my taste.
+- As a customer, I want to add drinks and chips to my order so that I can have a complete meal.
+- As a customer, I want to receive a summary of my order, including the total price, so that I can verify the details before confirming.
+- As a staff member, I want to automate the order process so that I can reduce errors and save time.
+- As a customer, I want to have multiple options for bread so that I can choose my preferred type.
+- As a staff member, I want the application to validate user inputs so that incorrect selections are minimized.
+- As a customer, I want to be able to add multiple toppings and sauces to my sandwich so that I can customize it to my liking.
+- As a customer, I want to see the price of each item added to my order so that I can manage my budget.
 - As a customer, I want to quickly select from a list of signature sandwiches so that I can save time while ordering.
 - As a customer, I want to have the option to toast my sandwich so that I can enjoy a warm and crispy meal.
 - As a staff member, I want the system to generate a receipt automatically so that I can keep records of all transactions.
