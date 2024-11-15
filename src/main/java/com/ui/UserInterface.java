@@ -12,6 +12,10 @@ public class UserInterface {
     private static final String[] CHEESE_OPTIONS = {"American", "Provolone", "Cheddar", "Swiss"};
     private static final String[] REGULAR_TOPPING_OPTIONS = {"Lettuce", "Peppers", "Onions", "Tomatoes", "Jalapenos", "Cucumbers", "Pickles", "Guacamole", "Mushrooms"};
     private static final String[] SAUCE_OPTIONS = {"Mayo", "Mustard", "Ketchup", "Ranch", "Thousand Island", "Vinaigrette"};
+    private static final String[] DRINK_OPTIONS = {"Coke", "Sprite", "Water"};
+    private static final String[] CHIPS_OPTIONS = {"Potato Chips", "Tortilla Chips", "BBQ Chips"};
+
+
 
     public void displayMainMenu() {
         boolean running = true;
@@ -224,15 +228,27 @@ public class UserInterface {
     private void addDrink() {
         System.out.println("Select drink size (Small, Medium, Large):");
         String size = scanner.nextLine();
-        System.out.println("Enter flavor:");
-        String flavor = scanner.nextLine();
+        System.out.println("Select drink flavor:");
+        for (int i = 0; i < DRINK_OPTIONS.length; i++) {
+            System.out.println((i + 1) + ") " + DRINK_OPTIONS[i]);
+        }
+        int flavorChoice = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        String flavor = (flavorChoice > 0 && flavorChoice <= DRINK_OPTIONS.length) ? DRINK_OPTIONS[flavorChoice - 1] : "Unknown";
+
         Drink drink = new Drink(size, flavor);
         currentOrder.addDrink(drink);
     }
 
     private void addChips() {
-        System.out.println("Enter chip type:");
-        String type = scanner.nextLine();
+        System.out.println("Select chip type:");
+        for (int i = 0; i < CHIPS_OPTIONS.length; i++) {
+            System.out.println((i + 1) + ") " + CHIPS_OPTIONS[i]);
+        }
+        int chipChoice = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        String type = (chipChoice > 0 && chipChoice <= CHIPS_OPTIONS.length) ? CHIPS_OPTIONS[chipChoice - 1] : "Unknown";
+
         Chips chips = new Chips(type);
         currentOrder.addChips(chips);
     }

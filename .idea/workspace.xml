@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e3f1794-bdf7-41bd-b2dd-1d4ec60746de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/receipts/2024-11-13-193938.txt" beforeDir="false" afterPath="$PROJECT_DIR$/receipts/2024-11-13-193938.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Cheese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Chips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/DeliciousApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/IPriceable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/IPriceable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/OrderFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/order/OrderFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/RegularTopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/RegularTopping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Sauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Sauce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/Topping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestDrinkCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestDrinkCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestOrderTotalPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestOrderTotalPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestSandwichPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestSandwichPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
