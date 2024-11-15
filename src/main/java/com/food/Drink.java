@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.food;
 
 public class Drink implements IPriceable {
     private String size;

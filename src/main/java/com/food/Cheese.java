@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.food;
 
 public class Cheese extends Topping {
     public Cheese(String name) {

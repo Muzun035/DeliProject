@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.food;
 
 public abstract class Topping {
     protected String name;

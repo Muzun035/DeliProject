@@ -1,10 +1,10 @@
-package com.pluralsight;
+package com.food;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Sandwich implements IPriceable {
+public class Sandwich implements IPriceable {
     private String size;
     private String breadType;
     private List<Topping> toppings = new ArrayList<>();

@@ -1,0 +1,15 @@
+Receipt for customer: Jack
+Order time: Fri Nov 15 00:19:25 EST 2024
+
+Sandwiches:
+- 8" sandwich on white bread (toasted) with:
+  - Steak
+  - American
+  - Peppers
+  - Mayo ($10.50)
+
+Drinks:
+
+Chips:
+
+Total Price: $10.50

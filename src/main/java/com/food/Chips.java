@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.food;
 
 public class Chips implements IPriceable {
     private String type;

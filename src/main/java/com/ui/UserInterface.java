@@ -1,4 +1,5 @@
-package com.food;
+package com.ui;
+import com.food.*;
 import com.order.Order;
 
 import java.util.Scanner;

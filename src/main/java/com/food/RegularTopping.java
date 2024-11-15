@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.food;
 
 public class RegularTopping extends Topping {
     public RegularTopping(String name) {
