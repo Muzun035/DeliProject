@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5e3f1794-bdf7-41bd-b2dd-1d4ec60746de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestDrinkCreation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestOrderTotalPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/TestSandwichPrice.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,12 +45,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.order" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ui" />
+      <recent name="com.food" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.food.DeliciousApplication">
